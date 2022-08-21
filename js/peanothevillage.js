@@ -468,6 +468,7 @@ addLayer("p", {
             },
             onClick() {
                 let data = player.i
+                let f = tmp.p.buyFoodExp//不确定你想写多少
                 data.food = data.food.add(10)
                 data.gold = data.gold.sub(tmp.p.buyFoodCost)
                 player.e.trading.cur_exp = player.e.trading.cur_exp.add(f.mul(tmp.p.buyFoodExp))
